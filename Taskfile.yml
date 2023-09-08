@@ -1,0 +1,11 @@
+version: '3'
+
+tasks:
+  build:
+    desc: "build docker image"
+    cmds:
+      - docker build -t dkutil .
+  run:
+    desc: "run the docker image interactively"
+    cmds:
+      - docker run -it --rm dkutil www.google.com
